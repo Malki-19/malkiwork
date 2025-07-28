@@ -18,6 +18,10 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				sans: ['Inter', 'system-ui', 'sans-serif'],
+				mono: ['JetBrains Mono', 'monospace'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -61,6 +65,15 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Portfolio specific colors
+				purple: {
+					400: 'hsl(var(--purple-light))',
+					500: 'hsl(var(--purple-glow))',
+				},
+				navy: {
+					900: 'hsl(var(--navy-dark))',
+					800: 'hsl(var(--navy-medium))',
 				}
 			},
 			borderRadius: {
@@ -88,7 +101,12 @@ export default {
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in-up': 'fadeInUp 0.6s ease-out',
+				'slide-in-left': 'slideInLeft 0.6s ease-out',
+				'float': 'float 6s ease-in-out infinite',
+				'pulse-glow': 'pulse-glow 2s ease-in-out infinite',
+				'typing': 'typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite'
 			}
 		}
 	},
